@@ -25,7 +25,7 @@ export const FetchData = () => {
   };
 
   const setfavorite = (data) => {
-    if (state.favoritelist.includes(data) == false) {
+    if (state.favoritelist.includes(data) === false) {
       dispatch({ type: "FAVORITE_LIST", payload: data });
       dispatch({ type: "FAVORITE", payload: true });
     } else {
