@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 
 export default function MovieDetails() {
-  const { data, loading, favorite, setfavorite, favoritelists } = useMovie();
+  const { data, loading,  setfavorite, favoritelists } = useMovie();
   const [errorImages, setErrorImages] = useState({});
 
   const itemsPerPage = 6;

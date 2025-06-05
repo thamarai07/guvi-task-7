@@ -6,7 +6,7 @@ import { useMovie } from "../Hooks/MovieContext";
 
 export default function SingleMovie() {
   const { id } = useParams();
-  const { setpara, favoritelists, setfavorite } = useMovie();
+  const { favoritelists, setfavorite } = useMovie();
 
   const { singlemoviedata, singlemoviedataloading } = FetchSingleMovie(id);
 
